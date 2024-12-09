@@ -1,5 +1,6 @@
 package com.shaik.testing.DI;
 
+import com.shaik.testing.DI.ondynamic.Payment;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -21,6 +22,9 @@ public class UserDetails {
 
     @Autowired
     private Order order;
+
+    @Autowired
+    private Payment payment;
 
     public Integer getId() {
         return id;

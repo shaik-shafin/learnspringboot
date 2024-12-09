@@ -2,10 +2,12 @@ package com.shaik.testing.DI;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
 @Lazy
+@Primary
 public class OnlineOrder implements Order {
 
     @Override
