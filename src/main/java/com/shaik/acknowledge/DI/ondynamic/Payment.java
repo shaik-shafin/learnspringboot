@@ -1,4 +1,4 @@
-package com.shaik.testing.DI.ondynamic;
+package com.shaik.acknowledge.DI.ondynamic;
 
 public interface Payment {
 

@@ -1,4 +1,4 @@
-package com.shaik.testing.DI;
+package com.shaik.acknowledge.DI;
 
 public interface Order {
 

@@ -1,4 +1,4 @@
-package com.shaik.testing.conditionalonproperty;
+package com.shaik.acknowledge.conditionalonproperty;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

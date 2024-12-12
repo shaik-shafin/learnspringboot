@@ -1,6 +1,6 @@
-package com.shaik.testing.DI;
+package com.shaik.acknowledge.DI;
 
-import com.shaik.testing.DI.ondynamic.Payment;
+import com.shaik.acknowledge.DI.ondynamic.Payment;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;

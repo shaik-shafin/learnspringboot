@@ -1,4 +1,4 @@
-package com.shaik.testing.DI;
+package com.shaik.acknowledge.DI;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;

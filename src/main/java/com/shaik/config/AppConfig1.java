@@ -1,9 +1,9 @@
 package com.shaik.config;
 
-import com.shaik.testing.DI.ondynamic.PaymentMode;
-import com.shaik.testing.DI.ondynamic.Payment;
-import com.shaik.testing.DI.ondynamic.Paytm;
-import com.shaik.testing.DI.ondynamic.PhonePe;
+import com.shaik.acknowledge.DI.ondynamic.PaymentMode;
+import com.shaik.acknowledge.DI.ondynamic.Payment;
+import com.shaik.acknowledge.DI.ondynamic.Paytm;
+import com.shaik.acknowledge.DI.ondynamic.PhonePe;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

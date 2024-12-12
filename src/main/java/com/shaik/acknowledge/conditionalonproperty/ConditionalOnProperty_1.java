@@ -1,4 +1,4 @@
-package com.shaik.testing.conditionalonproperty;
+package com.shaik.acknowledge.conditionalonproperty;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
