@@ -1,4 +1,4 @@
-package com.shaik.acknowledge.interceptor;
+package com.shaik.acknowledge.interceptors;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

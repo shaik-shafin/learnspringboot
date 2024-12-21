@@ -1,4 +1,4 @@
-package com.shaik.acknowledge.interceptor;
+package com.shaik.acknowledge.interceptors;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

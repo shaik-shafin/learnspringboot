@@ -1,4 +1,4 @@
-package com.shaik.acknowledge.interceptor;
+package com.shaik.acknowledge.interceptors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
