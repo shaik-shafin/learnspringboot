@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/aop")
-public class MainClass {
+public class Controller {
 
     @Autowired
     private AopService aopService;

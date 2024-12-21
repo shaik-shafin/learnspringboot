@@ -1,8 +1,12 @@
 package com.shaik.acknowledge.aop;
 
+import com.shaik.acknowledge.aop.annotation.MyCustomAnnotation;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
+
+import java.lang.reflect.Method;
 
 @Aspect
 @Component
@@ -182,6 +186,19 @@ public class LoggingAspect {
         System.out.println("Method-20 run after actual method");
     }
 
+    @Around("@annotation(com.shaik.acknowledge.aop.annotation.MyCustomAnnotation)")
+    public void beforeMethod21(ProceedingJoinPoint proceedingJoinPoint) throws Throwable{
 
+
+        System.out.println("*********** do something before MyCustomAnnotation ************");
+
+        Method method = ((MethodSignature) proceedingJoinPoint.getSignature()).getMethod();
+        if(method.isAnnotationPresent(MyCustomAnnotation.class)){
+            MyCustomAnnotation myCustomAnnotation = method.getAnnotation(MyCustomAnnotation.class);
+            System.out.println(myCustomAnnotation.key());
+        }
+        proceedingJoinPoint.proceed();
+        System.out.println("*********** do something after MyCustomAnnotation ************");
+    }
 
 }
