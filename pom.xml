@@ -74,6 +74,12 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- Spring Boot JDBC API Dependency -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
 
 	</dependencies>
 
