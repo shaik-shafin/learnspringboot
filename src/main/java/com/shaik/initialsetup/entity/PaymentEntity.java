@@ -1,4 +1,4 @@
-package com.shaik.entity;
+package com.shaik.initialsetup.entity;
 
 public class PaymentEntity {
 

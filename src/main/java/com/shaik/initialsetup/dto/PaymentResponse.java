@@ -1,4 +1,4 @@
-package com.shaik.dto;
+package com.shaik.initialsetup.dto;
 
 import java.util.List;
 

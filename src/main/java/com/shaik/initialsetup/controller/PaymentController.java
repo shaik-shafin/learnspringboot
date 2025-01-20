@@ -1,8 +1,8 @@
-package com.shaik.controllers;
+package com.shaik.initialsetup.controller;
 
-import com.shaik.dto.PaymentRequest;
-import com.shaik.dto.PaymentResponse;
-import com.shaik.service.PaymentService;
+import com.shaik.initialsetup.dto.PaymentRequest;
+import com.shaik.initialsetup.dto.PaymentResponse;
+import com.shaik.initialsetup.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

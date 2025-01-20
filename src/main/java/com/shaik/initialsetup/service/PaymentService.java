@@ -1,9 +1,9 @@
-package com.shaik.service;
+package com.shaik.initialsetup.service;
 
-import com.shaik.dto.PaymentRequest;
-import com.shaik.dto.PaymentResponse;
-import com.shaik.entity.PaymentEntity;
-import com.shaik.repository.PaymentRepository;
+import com.shaik.initialsetup.dto.PaymentRequest;
+import com.shaik.initialsetup.dto.PaymentResponse;
+import com.shaik.initialsetup.entity.PaymentEntity;
+import com.shaik.initialsetup.repository.PaymentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.shaik.repository;
+package com.shaik.initialsetup.repository;
 
-import com.shaik.dto.PaymentRequest;
-import com.shaik.entity.PaymentEntity;
+import com.shaik.initialsetup.dto.PaymentRequest;
+import com.shaik.initialsetup.entity.PaymentEntity;
 import org.springframework.stereotype.Repository;
 
 @Repository

@@ -1,4 +1,4 @@
-package com.shaik.dto;
+package com.shaik.initialsetup.dto;
 
 public class PaymentRequest {
 

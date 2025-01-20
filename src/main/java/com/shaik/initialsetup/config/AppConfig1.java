@@ -1,4 +1,4 @@
-package com.shaik.config;
+package com.shaik.initialsetup.config;
 
 import com.shaik.acknowledge.DI.ondynamic.PaymentMode;
 import com.shaik.acknowledge.DI.ondynamic.Payment;
