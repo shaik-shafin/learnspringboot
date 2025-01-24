@@ -2,6 +2,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamesspaceSchemaLocation="http://www.ehcache.org/ehcache.xsd">
 
+    <!-- Even if you don't mention this, default one will get picked -->
+    <defaultCache maxElementsInMemory="2000" eternal="false"
+          timeToIdleSeconds="6000" timeToLiveSeconds="6000"
+          overflowToDisk="false" evictionStrategy="FIFO"/>
+
     <cache alias="userDetailsCache"
            maxElementsInMemory="100"
            timeToLiveSeconds="60"
