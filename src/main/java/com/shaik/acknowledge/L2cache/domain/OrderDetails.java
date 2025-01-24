@@ -1,5 +1,6 @@
 package com.shaik.acknowledge.L2cache.domain;
 
+import com.shaik.acknowledge.L2cache.listeners.AuditLogListener;
 import jakarta.persistence.*;
 import org.hibernate.annotations.Cache;
 
@@ -8,6 +9,7 @@ import static org.hibernate.annotations.CacheConcurrencyStrategy.READ_WRITE;
 @Entity
 @Table(name = "order_details")
 @Cache(usage = READ_WRITE, region = "orderDetailsCache")
+@EntityListeners(AuditLogListener.class)
 public class OrderDetails {
 
     @Id
