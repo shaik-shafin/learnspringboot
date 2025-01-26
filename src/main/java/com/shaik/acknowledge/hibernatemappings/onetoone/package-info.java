@@ -47,4 +47,42 @@ package com.shaik.acknowledge.hibernatemappings.onetoone;
  * Above the entity class
  *
  * NOTE: while defining the columns in the domain setters and getters important
+ *
+ * Hibernate:
+ *     select
+ *         ma1_0.member_address_id,
+ *         ma1_0.city,
+ *         ma1_0.country,
+ *         md1_0.id,
+ *         md1_0.name,
+ *         md1_0.phone_num,
+ *         ma1_0.pin_code,
+ *         ma1_0.state,
+ *         ma1_0.street
+ *     from
+ *         member_address ma1_0
+ *     left join
+ *         member_details md1_0
+ *             on md1_0.id=ma1_0.member_address_id
+ *     where
+ *         ma1_0.member_address_id=?
+ *
+ * Hibernate:
+ *     select
+ *         ma1_0.member_address_id,
+ *         ma1_0.city,
+ *         ma1_0.country,
+ *         md1_0.id,
+ *         md1_0.name,
+ *         md1_0.phone_num,
+ *         ma1_0.pin_code,
+ *         ma1_0.state,
+ *         ma1_0.street
+ *     from
+ *         member_address ma1_0
+ *     left join
+ *         member_details md1_0
+ *             on md1_0.id=ma1_0.address_id
+ *     where
+ *         ma1_0.member_address_id=?
  */
