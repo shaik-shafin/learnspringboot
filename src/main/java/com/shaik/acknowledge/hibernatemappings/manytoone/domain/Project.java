@@ -48,5 +48,8 @@ public class Project {
 
     public void setStudent(List<Student> student) {
         this.student = student;
+        for(Student st : student){
+            st.setProject(this);
+        }
     }
 }

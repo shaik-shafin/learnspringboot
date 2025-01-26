@@ -30,4 +30,5 @@ package com.shaik.acknowledge.hibernatemappings.onetomany;
  * @JoinColumn(name = "fk", referencedColumnName = "pk"), give the name that you want to join.
  *
  * NOTE: referenceColumnName is optional by default JPA join with PK of table or domain, it will work even if you don't mention it.
+ *       When we use the mappedBy we have manage the relation by assigning the parent to childrens.
  */
