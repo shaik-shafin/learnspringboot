@@ -10,15 +10,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/register")
+@RequestMapping("/auth")
 public class AuthRegisterController {
 
     @Autowired
     private AuthRegisterService authRegisterService;
 
-    @PostMapping
+    @PostMapping("register")
     public AuthDetails register(@RequestBody AuthDetails authDetails){
 
         return authRegisterService.register(authDetails);
+    }
+
+    @PostMapping("login")
+    public String login(@RequestBody AuthDetails authDetails){
+
+        return authRegisterService.verify(authDetails);
     }
 }
