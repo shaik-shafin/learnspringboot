@@ -136,6 +136,14 @@
 			<version>0.12.6</version>
 		</dependency>
 
+		<!-- Oauth2 API for google, github login ..ect -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-oauth2-client</artifactId>
+			<version>6.4.1</version>
+		</dependency>
+
+
 	</dependencies>
 
 

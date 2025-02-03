@@ -36,4 +36,13 @@ package com.shaik.acknowledge.security;
  * 9. Before this we have to validate the token create JWTFilter class
  * 10. And handle the logic to check the token validate or not
  * 11. Using the postman either we can pass credentials or we can send the token both will work.
+ *
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *                                      OAuth2 Login
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * 1. First add dependencies in pom.xml
+ * 2. get clientId and clientSecret from google developer console or github
+ * 3. add the clientId and clientSecret in the application.properties
+ * 4. add authlogic2 filter in appConfig class
+ * 5. This feature main purpose of to use other API's logic instead of ours logic form
 * */
