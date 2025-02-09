@@ -21,6 +21,9 @@ package com.shaik.acknowledge.security;
  * 12. DaoAuthenticationProvider make use of userDetailsService
  * 13. UserDetailService make use of UserDetails
  * 14. These all are interfaces so you have to implement them to achieve the spring authentication
+ * 15. If you want to encrypt the user password then you have to encrypt before saving in to the database
+ * 16. {@link AuthRegisterService#register} method and on submitting the credentials you have to decrypt it.
+ * 17. {@link AppConfig#getAuthenticationProvider} method and set the passwordEncoder and userDetailsService
  *
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 *                                  JWT BASED AUTHENTICATION
