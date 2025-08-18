@@ -1,0 +1,37 @@
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: testing
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - "3307:3306"  # Changed host port to avoid conflicts
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - springboot-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: springboot-docker
+    depends_on:
+      db:
+        condition: service_healthy   # Wait until DB is healthy
+    ports:
+      - "8080:8080"
+    networks:
+      - springboot-network
+
+
+volumes:
+  mysql_data:
+
+networks:
+  springboot-network:
